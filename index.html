@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creative Personal Portfolio — s.kirudhaya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">s.kirudhaya</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <!-- Hero with 3D animated card -->
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <div class="card-3d" id="heroCard">
+          <div class="card-face card-front">
+            <h1>Creative Personal Portfolio</h1>
+            <p class="subtitle">with 3D Animations and Interactive UI</p>
+            <div class="meta">
+              <span><strong>Name:</strong> s.kirudhaya</span>
+              <span><strong>Reg No:</strong> 2422k1256</span>
+            </div>
+            <a href="#projects" class="cta">See Projects ↓</a>
+          </div>
+          <div class="card-face card-back">
+            <h2>Quick Info</h2>
+            <ul>
+              <li>Responsive Design</li>
+              <li>CSS 3D Transforms</li>
+              <li>Vanilla JS Interactivity</li>
+            </ul>
+            <p class="tiny">Hover the card and move your mouse for tilt effect</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="panel">
+      <h2>About Me</h2>
+      <p>
+        I'm <strong>s.kirudhaya</strong>, a student focused on web development and interactive UI design. This portfolio demonstrates modern CSS animations
+        and JavaScript-based interactivity.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" data-tilt>
+          <h3>Interactive Portfolio (This Project)</h3>
+          <p>3D hero card, project gallery, and responsive layout built with HTML/CSS/JS.</p>
+          <div class="tags">HTML · CSS · JavaScript</div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <h3>Smart Resume Builder</h3>
+          <p>Real-time resume preview and exporter to PDF.</p>
+          <div class="tags">React · Node (demo)</div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <h3>AI Chatbot for Student Queries</h3>
+          <p>Chat assistant prototype using rule-based and ML suggestions.</p>
+          <div class="tags">Python · Flask</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="panel">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive & Mobile-first Design</li>
+        <li>Basic Git & GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="panel contact-panel">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p>+91 9876543310</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>LinkedIn / GitHub</h3>
+          <p><a href="#" aria-label="GitHub">github.com/your-username</a></p>
+        </div>
+
+        <!-- Email must be last as you requested -->
+        <div class="contact-card email-card">
+          <h3>Email</h3>
+          <p><a href="mailto:kirudhaya45@gmail.com">kirudhaya45@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> s.kirudhaya — Creative Personal Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
